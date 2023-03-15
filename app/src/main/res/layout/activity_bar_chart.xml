@@ -7,21 +7,38 @@
     android:background="#90CAF9"
     tools:context=".charts.BarChartActivity">
 
-<com.db.williamchart.view.BarChartView
-    android:id="@+id/barChart"
-    android:layout_width="0dp"
-    android:layout_height="150dp"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    app:chart_axis="x"
-    app:chart_barsColor="#fff"
-    app:chart_barsRadius="4dp"
-    app:chart_labelsColor="#0D47A1"
-    app:chart_labelsSize="10sp"
-    app:chart_spacing="15dp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"/>
+    <com.db.williamchart.view.BarChartView
+        android:id="@+id/barChart"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:chart_axis="x"
+        app:chart_barsColor="#fff"
+        app:chart_barsRadius="4dp"
+        app:chart_labelsColor="#0D47A1"
+        app:chart_labelsSize="10sp"
+        app:chart_spacing="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/barChartHorizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.db.williamchart.view.HorizontalBarChartView
+        android:id="@+id/barChartHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:chart_axis="x"
+        app:chart_barsColor="#fff"
+        app:chart_barsRadius="4dp"
+        app:chart_labelsColor="#0D47A1"
+        app:chart_labelsSize="10sp"
+        app:chart_spacing="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barChart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

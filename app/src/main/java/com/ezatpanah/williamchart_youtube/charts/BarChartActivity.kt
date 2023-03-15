@@ -14,8 +14,13 @@ class BarChartActivity : AppCompatActivity() {
         _binding = ActivityBarChartBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.apply {
+
             barChart.animation.duration = animationDuration
             barChart.animate(barSet)
+
+            barChartHorizontal.animation.duration = animationDuration
+            barChartHorizontal.animate(horizontalBarSet)
+
         }
     }
 
@@ -40,7 +45,6 @@ class BarChartActivity : AppCompatActivity() {
             "FUSCE" to 6.4F,
             "EGET" to 3F
         )
-
 
         private const val animationDuration = 1000L
     }
