@@ -7,6 +7,18 @@
     android:background="#90CAF9"
     tools:context=".charts.DonutChartActivity">
 
+    <TextView
+        android:id="@+id/tvChartName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp"
+        android:text="Donut Chart"
+        android:textColor="#0D47A1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/donutChart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <com.db.williamchart.view.DonutChartView
         android:id="@+id/donutChart"
         android:layout_width="100dp"

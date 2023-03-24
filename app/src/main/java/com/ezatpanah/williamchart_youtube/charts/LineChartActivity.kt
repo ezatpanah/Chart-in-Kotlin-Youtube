@@ -25,7 +25,7 @@ class LineChartActivity : AppCompatActivity() {
                 )
             lineChart.animation.duration = animationDuration
             lineChart.onDataPointTouchListener = { index, _, _ ->
-                tvChartName.text =
+                tvChartData.text =
                     lineSet.toList()[index]
                         .second
                         .toString()

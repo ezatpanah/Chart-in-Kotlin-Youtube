@@ -7,6 +7,19 @@
     android:background="#90CAF9"
     tools:context=".charts.BarChartActivity">
 
+    <TextView
+        android:id="@+id/tvChartName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp"
+        android:text="Bar Chart"
+        android:textColor="#0D47A1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/barChart" />
+
+
     <com.db.williamchart.view.BarChartView
         android:id="@+id/barChart"
         android:layout_width="0dp"

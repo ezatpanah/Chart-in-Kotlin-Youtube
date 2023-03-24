@@ -11,6 +11,19 @@
         android:id="@+id/tvChartName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingBottom="32dp"
+        android:text="Line Chart"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvChartData" />
+
+    <TextView
+        tools:text="Chart Data"
+        android:id="@+id/tvChartData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:paddingBottom="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
