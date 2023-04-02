@@ -1,8 +1,6 @@
 # Charts in Kotlin 
 
 <img alt="Ezatpanah  Charts in Kotlin-Youtube" src="https://emojipedia-us.s3.amazonaws.com/content/2020/04/05/yt.png" width="3%"></a>
-
-
 <br>
 YouTube Video 
 <br> 
